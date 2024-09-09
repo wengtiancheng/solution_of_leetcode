@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class Solution {
+class leetcode977 {
     public int[] sortedSquares(int[] nums) {
         int len = nums.length;
         for(int i = 0; i < len; i++){

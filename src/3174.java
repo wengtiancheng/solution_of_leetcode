@@ -1,4 +1,4 @@
-class Solution {
+class Soution {
     public String clearDigits(String s) {
         int len = s.length();
         int[] tmp = new int[len];

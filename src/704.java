@@ -1,4 +1,4 @@
-class Solution {
+class lc704 {
     public int search(int[] nums, int target) {
         int len = nums.length;
         if(target < nums[0] || target > nums[len - 1]){
