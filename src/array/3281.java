@@ -1,3 +1,5 @@
+package array;
+
 class lc3281 {
     public int maxPossibleScore(int[] start, int d) {
         start = sort(start);

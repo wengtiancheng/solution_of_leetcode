@@ -1,3 +1,5 @@
+package array;
+
 class Soution {
     public String clearDigits(String s) {
         int len = s.length();

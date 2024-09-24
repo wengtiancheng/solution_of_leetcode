@@ -1,3 +1,5 @@
+package array;
+
 class lc100422 {
     //复习，分隔字符串的方法，将字符转化为整数的方法，，将整数转化为二进制的方法这些都是API
     public String convertDateToBinary(String date) {

@@ -1,3 +1,5 @@
+package array;
+
 class Solution {
     public int[][] generateMatrix(int n) {
         int[][] res = new int[n][n];

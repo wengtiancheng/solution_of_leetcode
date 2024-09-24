@@ -1,3 +1,5 @@
+package array;
+
 class lc704 {
     public int search(int[] nums, int target) {
         int len = nums.length;
