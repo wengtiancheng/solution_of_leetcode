@@ -24,6 +24,7 @@ public:
                 int m = 0;//a和b交集的大小
                 for(auto&s : groups[a]){
                     m += groups[b].count(s);//元素是否在容器中，返回0或者1
+                    m++;
                 }
                  ans += (long long) (groups[a].size() - m) * (groups[b].size() - m);
             }
