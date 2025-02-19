@@ -18,36 +18,30 @@
  */
 #include <vector>
 #include <algorithm>
+#include <stack>
 using namespace std;
 class Solution {
 public:
-    vector<int> res;
-    struct TreeNode {
-             int val;
-             TreeNode *left;
-             TreeNode *right;
-             TreeNode() : val(0), left(nullptr), right(nullptr) {}
-             TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-             TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
-    };
+    
+    
+    
     vector<int> inorderTraversal(TreeNode* root) {
-        get(root);
+        stack<TreeNode*> tmp;
+        vector<int> res;
+        while(root != nullptr || !tmp.empty()){
+            while(root != nullptr){
+                tmp.push(root);
+                root = root->left;
+            }
+            res.push_back(tmp.top()->val);
+            tmp.pop();
+            root = root->right;
+            
+        }
         return res;
     }
 
-    void get(TreeNode* root){
-        if(root == nullptr){
-            return;
-        }
-        if(root->left != nullptr){
-            get(root->left);
-        }
-        res.push_back(root->val);
-        if(root->right != nullptr){
-            get(root->right);
-        }
-            
-    }
+    
 };
 // @lc code=end
 
