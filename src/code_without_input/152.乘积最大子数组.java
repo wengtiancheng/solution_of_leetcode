@@ -22,7 +22,7 @@ class Solution {
             dp_max = Math.max(dm * nums[i], Math.max(dn * nums[i], nums[i]));
             dp_min = Math.min(dn * nums[i], Math.min(dm * nums[i], nums[i]));
             if(dp_max > max){
-                max = dp_max;
+                max = dp_max;                                                                                                               
             }
         }
         return max;
