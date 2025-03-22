@@ -3,7 +3,7 @@ package array;
 import java.util.Collections;
 import java.util.List;
 
-class Solution {
+class lc2860 {
     public int countWays(List<Integer> nums) {
         Collections.sort(nums);
         int len = nums.size();
