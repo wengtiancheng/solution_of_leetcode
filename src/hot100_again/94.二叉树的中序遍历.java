@@ -6,10 +6,13 @@
 
 // @lc code=start
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
+
+
 
 
 
@@ -31,8 +34,8 @@ import java.util.List;
 class Solution {
     
     public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
         Deque<TreeNode> stack = new LinkedList<>();
-        List<Integer> res = new LinkedList<>();
         while(root != null || !stack.isEmpty()){
             while(root != null){
                 stack.push(root);
@@ -43,6 +46,7 @@ class Solution {
             root = node.right;
         }
         return res;
+
     }
 
     
